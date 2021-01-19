@@ -3,6 +3,7 @@
 // STEP ONE: complete the enqueue method
 // STEP TWO: complete the dequeue method
 //STEP THREE: complete the printQueue method
+//FINAL STEP: run these functions below to check their outputs
 
 class Queue 
 { 
@@ -64,37 +65,25 @@ class Queue
 // creating object for queue class 
 var queue = new Queue(); 
               
+// FINAL STEP: 
+// console log the dequeue method to check that it returns 'underflow'
   
-// Testing dequeue and pop on an empty queue 
-// returns Underflow 
-console.log(queue.dequeue()); 
+// use .isEmpty to check that the queue is empty at this point
   
-// returns true 
-console.log(queue.isEmpty()); 
+// Adding elements to the queue so that it contains [10, 20, 30, 40, 50] using enqueue
+
+//console.log the printQueue method to check that it successfully added your values to the array
   
-// Adding elements to the queue 
-// queue contains [10, 20, 30, 40, 50] 
-queue.enqueue(10); 
-queue.enqueue(20); 
-queue.enqueue(30); 
-queue.enqueue(40); 
-queue.enqueue(50); 
-queue.enqueue(60); 
+//remove the top most element using dequeue and console.log its result
   
-// returns 10 
-console.log(queue.front()); 
+// console.log using the front method what the new top most element is 
   
-// removes 10 from the queue 
-// queue contains [20, 30, 40, 50, 60] 
-console.log(queue.dequeue()); 
-  
-// returns 20 
-console.log(queue.front()); 
-  
-// removes 20 
-// queue contains [30, 40, 50, 60] 
-console.log(queue.dequeue()); 
-  
-// printing the elements of the queue 
-// prints [30, 40, 50, 60] 
-console.log(queue.printQueue()); 
+// console.log the printQueue method to check that is outputs the correct thing
+
+// outputs should be:
+// Underflow
+// true
+// 10 20 30 40 50
+// 10
+// 20
+// 20 30 40 50

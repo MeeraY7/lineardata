@@ -2,7 +2,7 @@
 //STEP ONE: complete the pop() method's if statement to check if empty
 // STEP TWO : complete the pop() method's return statement by removing the top most element
 // STEP THREE: complete the peek method that lets you look at the top element in an array
-
+//FINAL STEP: run these functions below to check their outputs
 
 // Stack class 
 class Stack { 
@@ -61,27 +61,27 @@ class Stack {
 // creating object for stack class 
 var stack = new Stack(); 
   
-// testing isEmpty and pop on an empty stack 
+// FINAL STEPS:
+
+//check if the stack is empty returns false
+
   
-// returns false 
-console.log(stack.isEmpty());  
+// check that using .pop on an empty array returns underflow
+
+// Adding element 10,20 and 30 to the stack using a method from the class
   
-// returns Underflow 
-console.log(stack.pop());  
-// Adding element to the stack 
-stack.push(10); 
-stack.push(20); 
-stack.push(30); 
+// print the entire stack in the terminal so we can check it was added 
+
+// peeking at the stack should return 30
   
-// Printing the stack element 
-// prints [10, 20, 30] 
-console.log(stack.printStack()); 
-  
-// returns 30 
-console.log(stack.peek()); 
-  
-// returns 30 and remove it from stack 
-console.log(stack.pop()); 
-  
-// returns [10, 20] 
-console.log(stack.printStack());  
+// remove the top element in the array, and make sure it returns what this element was
+
+//print the new stack
+
+// outputs should be:
+// true
+// Underflow
+// 10 20 30
+// 30
+// 30
+// 10 20
