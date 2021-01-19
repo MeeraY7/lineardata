@@ -13,14 +13,14 @@ class Stack {
     // push function 
     push(element) 
     { 
-        // push element into the items 
+        // push element into the items : we add to the 'top' of the array which is the end if looked at linearly 
         this.items.push(element); 
     } 
     // pop function 
     pop() 
     { 
         // return top most element in the stack 
-        // and removes it from the stack 
+        // and removes it from the stack : we remove from the 'top' of the array which is the end if looked at linearly 
         // Underflow if stack is empty 
         if (this.items.length == 0) 
             return "Underflow"; 

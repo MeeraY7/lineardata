@@ -12,13 +12,13 @@ class Queue
     // enqueue function 
     enqueue(element) 
     {     
-        // adding element to the queue 
+        // adding element to the queue : we add to the 'end' of the array/queue
         this.items.push(element); 
     } 
     // dequeue function 
     dequeue() 
     { 
-        // removing element from the queue 
+        // removing element from the queue : we remove from the 'front' of the array/queue as this was the first item created
         // returns underflow when called  
         // on empty queue 
         if(this.isEmpty()) 
